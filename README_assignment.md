@@ -46,7 +46,7 @@ The following images show the web application's appearance and functionality:
 
 ## Getting Started
 
-The application should have a `db.json` file on the back end that will be used to store and retrieve notes using the `fs` module.
+~~The application should have a `db.json` file on the back end that will be used to store and retrieve notes using the `fs` module.~~
 
 The following HTML routes should be created:
 
