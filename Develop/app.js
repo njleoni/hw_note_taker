@@ -29,7 +29,7 @@ app.use(express.json());
 //the below points our server to a series of "route" files
 //These routes give out server a "map" of how to respond when users visit or request date from various URLs
 
-require('./routes/apiRoutes')(app);
+// require('./routes/apiRoutes')(app);
 require('./routes/htmlRoutes')(app);
 
 //Listener
