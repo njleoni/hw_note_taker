@@ -1,15 +1,36 @@
+const db = require("../db/db.json");
+const fs = require("fs");
+const uuid = require("uuid/v4");
 
+// const noteData = require('../data/noteData');
 
-const noteText = require('../public/assets/js/index');
+module.exports = function(app) {
+  app.get("/api/notes", function(req, res) {
+    res.send(db);
+  });
 
-module.exports = (app) => {
-    app.get('/api/notes', (req, res) => res.json(noteText));
+  app.post("/api/notes", function(req, res) {
 
-    app.post('/api/notes', (req, res) => {
-        const newNote = req.body;
+    let noteId = uuid();
+    let newNote = {
+      id: noteId,
+      title: req.body.title,
+      text: req.body.text
+    };
 
-        res.json(newNote);
+    fs.readFile("./db/db.json", "utf8", (err, data) => {
+      if (err) throw err;
+
+      const allNotes = JSON.parse(data);
+
+      allNotes.push(newNote);
+
+      fs.writeFile("./db/db.json", JSON.stringify(allNotes, null, 2), err => {
+        if (err) throw err;
+        res.send(db);
+        console.log("Note created!")
+      });
     });
+  });
 
-
-};
+}

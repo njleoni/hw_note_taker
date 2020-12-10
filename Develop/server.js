@@ -1,6 +1,6 @@
 
 const express = require('express');
-const path = require('path');
+// const path = require('path');
 //this sets up the basic properties for our express server
 //tells node that we are creating an "express" server
 const app = express();
@@ -29,7 +29,7 @@ app.use(express.json());
 //the below points our server to a series of "route" files
 //These routes give out server a "map" of how to respond when users visit or request date from various URLs
 
-// require('./routes/apiRoutes')(app);
+require('./routes/apiRoutes')(app);
 require('./routes/htmlRoutes')(app);
 
 //Listener
