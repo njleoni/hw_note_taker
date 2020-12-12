@@ -27,8 +27,18 @@ module.exports = (app) => {
   });
 
   app.delete('/api/notes/:id', (req, res) => { 
-    
+    console.log("Delete Review");
+    let idRemove = req.params.id;
+    console.log(idRemove);
 
+    noteData.forEach(function(note) {
+      if (note.id === idRemove) {
+        console.log(note);
+        noteData.splice(note,1);
+        res.redirect(req.get('referer'));
+        testLog();
+      }
+    })
 
   });
 
