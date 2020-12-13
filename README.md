@@ -24,7 +24,7 @@
     
 ## Questions
 [GitHub Repo Link](https://github.com/njleoni/HW_NOTE_TAKER)
-[Heroku Link](https://github.com/njleoni/HW_NOTE_TAKER)
+[Heroku Link](https://tranquil-sands-99893.herokuapp.com/)
 #### If you have any additional questions, please contact me at nicholas.leoni@gmail.com
 
 ## Screenshot
