@@ -2,7 +2,7 @@
 # HW_NOTE_TAKER
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Desription
-    
+    The purpose of this assignment is to modify the starter code to create finished product. The app should allow the user to create notes with text and title which will be stored in the db.json file. App will load exisitng starter notes. User can add additional notes and save them to the db.json. If they click on an exisitng note in the browser, that note will then be presented. 
 
 ## Table of Contents
  - [Installation](#installation)
@@ -23,9 +23,10 @@
 ## Tests
     
 ## Questions
-[GitHub Repo Link](https://github.com/njleoni/HW_NOTE_TAKER)[Screencastify Link](https://drive.google.com/file/d/1OGCGkxQykXynQv58nLxzmi8psXL6SL2q/view)
+[GitHub Repo Link](https://github.com/njleoni/HW_NOTE_TAKER)
+[Heroku Link](https://github.com/njleoni/HW_NOTE_TAKER)
 #### If you have any additional questions, please contact me at nicholas.leoni@gmail.com
 
 ## Screenshot
-![Screenshot](./Assets/my_team.PNG)
+![Screenshot](./public/assets/img/note_taker.PNG)
 
