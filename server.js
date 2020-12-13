@@ -6,7 +6,7 @@ const express = require('express');
 const app = express();
 
 //sets the initial port
-const PORT = 3000;
+const PORT = process.env.PORT || 8080;
 
 // process.env.PORT || 
 
